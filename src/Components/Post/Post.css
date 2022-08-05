@@ -1,0 +1,18 @@
+
+.poster{
+    width:250px;
+    height:300px;
+    object-fit: cover;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.smallposter{
+    width:250px; 
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.poster:hover, .smallposter:hover{
+    transform: scale(1.1);
+}
