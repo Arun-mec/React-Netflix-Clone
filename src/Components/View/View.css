@@ -15,6 +15,7 @@ body {
 .parentViewDiv .topSection {
     display: flex;
     flex-direction: row;
+    flex-flow: row wrap;
 }
 
 .parentViewDiv .topSection .leftSection {
@@ -130,4 +131,69 @@ body {
 .midSection .related:hover,
 .midSection .details:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    .parentViewDiv {
+        padding:30px;
+    }
+    .parentViewDiv .topSection{
+        flex:2;
+    }
+    .parentViewDiv .topSection .leftSection {
+        order: 1;
+        max-width: 100%;
+        padding: 30px;
+    }
+    .parentViewDiv .topSection .leftSection .headingSection {
+        font-size: 30px;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+    .parentViewDiv .topSection .rightSection {
+        max-width: 100%;
+        padding: 30px;
+        
+    }
+    .parentViewDiv .topSection .rightSection>img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .parentViewDiv .topSection .leftSection .buttonSection .watchButton {
+        height: 50px;
+        width: 200px;
+    }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .parentViewDiv {
+        padding:50px;
+    }
+    .parentViewDiv .topSection{
+        flex:2;
+    }
+    .parentViewDiv .topSection .leftSection {
+        order: 1;
+        max-width: 100%;
+        padding: 30px;
+    }
+    .parentViewDiv .topSection .leftSection .headingSection {
+        font-size: 30px;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+    .parentViewDiv .topSection .rightSection {
+        max-width: 100%;
+        padding: 30px;
+        
+    }
+    .parentViewDiv .topSection .rightSection>img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .parentViewDiv .topSection .leftSection .buttonSection .watchButton {
+        height: 50px;
+        width: 200px;
+    }
 }

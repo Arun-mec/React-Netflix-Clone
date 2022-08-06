@@ -24,16 +24,19 @@
 }
 .footerChildDiv .childBottomDiv .optionsrow {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    flex:3;
 }
 .footerChildDiv .childBottomDiv .optionsrow .options {
     height: 50px;
-    width: 200px;
+    width: 250px;
     padding-right: 80px;
 }
+
 .footerChildDiv .childBottomDiv .optionsrow .options:hover {
     text-decoration: underline;
 }
+
 .footerChildDiv .childButtonDiv {
     flex: 40%;
 }
@@ -54,4 +57,17 @@ span:hover{
 .footerChildDiv .childButtonDiv .button:hover {
     background-color: #95959e;
     color: black;
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    .footerChildDiv .childBottomDiv .optionsrow .options{
+        width:110px;
+        height:70px;
+    }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .footerChildDiv .childBottomDiv .optionsrow .options{
+        width:150px;
+        height:70px;
+    }
 }

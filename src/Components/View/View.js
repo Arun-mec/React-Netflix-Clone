@@ -59,8 +59,7 @@ function View() {
                     <div className="secDescSection">{viewMovie.overview}</div>
                     <div className="buttonSection">
                         <button className="watchButton">Start your subscription and watch now</button>
-                        <button className="plusButton" onClick={()=>{
-                            {user? addMovie(viewMovie.id): navigate('/login') }}}>+</button>
+                        <button className="plusButton" onClick={()=>{user? addMovie(viewMovie.id): navigate('/login')}}>+</button>
                     </div>
                 </div>
                 <div className="rightSection">

@@ -16,8 +16,6 @@ function Footer() {
                     <div className="options"><span onClick={()=>{alert("Sorry, this feature hasn't implemented yet");}}>Help Center</span></div>
                     <div className="options"><span onClick={()=>{alert("Sorry, this feature hasn't implemented yet");}}>Terms of service</span></div>
                     <div className="options"><span onClick={()=>{alert("Sorry, this feature hasn't implemented yet");}}>Privacy</span></div>
-                </div>
-                <div className="optionsrow">
                     <div className="options"><span onClick={()=>{alert("Sorry, this feature hasn't implemented yet");}}>Cookie Preferences</span></div>
                     <div className="options"><span onClick={()=>{alert("Sorry, this feature hasn't implemented yet");}}>Corporate Information</span></div>
                 </div>

@@ -12,7 +12,6 @@ function Login() {
         e.preventDefault();
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then((userCredential) => {
-                const user = userCredential.user;
                 navigate('/')
             })
             .catch((error) => {

@@ -81,3 +81,22 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    .phoneParentDiv .phoneChildDiv {
+        width: 90vw;
+        height: 70vh;
+    }
+}
+@media screen and (min-device-width: 480px) and (max-device-width: 768px){
+    .phoneParentDiv .phoneChildDiv {
+        width: 70vw;
+        height: 50vh;
+    }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .phoneParentDiv .phoneChildDiv {
+        width: 50vw;
+        height: 50vh;
+    }
+}

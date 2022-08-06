@@ -81,3 +81,22 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    .loginParentDiv .loginChildDiv {
+        width: 90vw;
+        height: 80vh;
+    }
+}
+@media screen and (min-device-width: 480px) and (max-device-width: 768px){
+    .loginParentDiv .loginChildDiv {
+        width: 70vw;
+        height: 60vh;
+    }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .loginParentDiv .loginChildDiv {
+        width: 50vw;
+        height: 60vh;
+    }
+}

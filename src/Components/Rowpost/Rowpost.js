@@ -7,8 +7,6 @@ import Post from '../Post/Post'
 import { Link } from 'react-router-dom'
 
 function Rowpost(props) {
-  
-
   useEffect(() => {
     console.log(props)
     axios.get(props.url).then((res)=>{

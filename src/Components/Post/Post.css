@@ -16,3 +16,24 @@
 .poster:hover, .smallposter:hover{
     transform: scale(1.1);
 }
+
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    .smallposter{
+        width:150px; 
+    }
+    .poster{
+        width:150px;
+        height:200px;
+    }
+
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .smallposter{
+        width:150px; 
+    }
+    .poster{
+        width:150px;
+        height:200px;
+    }
+}
