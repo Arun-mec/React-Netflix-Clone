@@ -7,6 +7,9 @@
     display: flex;
     justify-content: space-between;
 }
+.navbar-bg{
+    background-color: rgba(0, 0, 0, 0.9);
+}
 .navbar-logo{
     position: fixed;
     left: 20px;

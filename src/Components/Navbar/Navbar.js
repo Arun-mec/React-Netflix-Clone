@@ -9,6 +9,16 @@ function Navbar() {
   const {user,setUser} = useContext(UserContext)
   const {firebase} = useContext(FirebaseContext)
   const [isDropDown,setIsDropdown] = useState(false)
+  const [bgcolor,setBgcolor] = useState(false)
+
+  const changeColor =()=>{
+    if(window.scrollY>100){
+      setBgcolor(true)
+    }else{
+      setBgcolor(false)
+    }
+  }
+  window.addEventListener('scroll',changeColor);
   useEffect(() => {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
@@ -17,7 +27,7 @@ function Navbar() {
   })
   })
   return (
-    <div className='navbar' >
+    <div className={bgcolor?'navbar navbar-bg':'navbar'} >
       <img className='navbar-logo' onClick={()=>{navigate('/')}}src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="Netflix logo" />
       {user? 
       <Fragment>
